@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+    <!-- 탭에 뜨는 창 이름 변경  -->
+</head>
+<body>
+    <form action="" method="">
+        <h1> Form element </h1>
+        <fieldset>
+            <legend> Basic Information </legend>
+            <label for="id"> id :</label><input type="text" id="id" placeholder="only English"><br>
+            <label for="password"> password : </label><input type="password" id="password"><br>
+            <!-- <label for="gender"> gender : </label> -->
+            gender: <label for="woman"> woman </label> <input type="radio" name="gender"> 
+            <label for="man"> man </label> <input type="radio" name="gender"> <br>
+        </fieldset>
+        <fieldset>
+            <legend> Additional Information </legend>
+            <!-- <label for="hobby"> hobby </label> -->
+            hobby: watching movies <input type="checkbox" name="hobby">, 
+            Listening musics <input type="checkbox" name="hobby">,
+            Reading books <input type="checkbox" name="hobby"> 
+            <br>
+            <!-- <label for="upload"> upload profile </label>:<input type="file"> -->
+            upload profile: <input type="file">
+            <br>
+            <!-- <label for="region"> region </label>:<select> -->  
+            region: <select>
+                <option>Seoul</option>
+                <option>Busan</option>
+                <option>Jeju</option>
+            </select>
+            <br>
+            introduction : <textarea cols="30" rows="5" placeholder="simple introduce"></textarea>
+            <!-- textarea 의 종료태그가 한 줄에 있어서 placeholde text 가 보임  -->
+            <br>
+            <button type="submit"> submit </button>
+            <button type="reset"> reset </button>
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>
