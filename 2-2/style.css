@@ -16,33 +16,27 @@
 html, body{
     height: 100%;
     margin: 0; 
-    padding: 0;
     font-family: 'Song Myung';
     min-width: 320px;
-    border: 5px solid pink;
 }
 
 header {
     position: sticky;
+    top: -4px;
     opacity: 0.8;
     backdrop-filter: blur(30px);
     background-color: white;
     color: black;
-    font-size: 24px;
-    font-weight: 800;
     padding-left: 36px;
-    padding-right: 36px;
+    padding-right: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid orange;
-    
 }
 
 ul {
     list-style-type: none;
-    border: 5px solid green;
-    align-items: 
+    padding: 0;
 }
 
 li {
@@ -50,120 +44,77 @@ li {
     margin-left: 16px;
     font-size: 18px;
     font-weight: bold;
-    border: 5px solid blue;
 }
 
 body{
-    padding: 10px; 
-    border: 5px solid purple;
+    padding: 20px; 
 }
 
 *{
     box-sizing: border-box;
 }
 
-.title{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    color: var(--lightblue);
-    border: 5px solid brown;
-    height: 50px;
-    font-size: 1.6rem;
-}
-
 main{
-    display: flex;
+    display: block;
+    margin-left: 100px;
     margin-top: 40px;
     position: left;
     overflow: hidden;
-    flex-flow: row nowrap;
-    height: calc(100% - 60px);
-    border: 5px solid black;
+    line-height: 36px;
+    font-size: 36px;
 }
 
 .sidebar{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    right: 0;
+    margin-top: 80px;
+    z-index: 1;
     transition: 0.6s;
+    position: fixed;
     background: var(--lightgray);
-    border-radius: 8px;
-    border : 5px solid gray;
+    border-radius: 16px;
+    padding: 16px;
 }
 
 .sidebar > span{
+    display: block;
     font-size: 1.4rem;
     color: black;
     transition: 0.6;
-    border: 2px solid red;
+    margin-bottom: 12px;
 }
 
 .container{
-    display: block;
+    display: flex;
     flex-flow: row wrap;
     flex: 1;
     font-size: 16px;
-    font-weight: bold;
+    margin-left: 90px;
     align-content: flex-start;
-    border: 5px solid lightblue;
-    overflow-y: scroll;
-}
-
-.intro {
-    display: block;
-    flew-flow: row nowrap;
-    align: center;
-}
-
-.intro > h1 {
-    border: 5px solid red;
-    font-size: 42px;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 0px;
-    /* align-items: flex-start; */
-}
-
-.intro > h6 {
-    border: 5px solid green;
-    margin-left: 24px;
-    font-size: 20px;
-}
-
-.cards {
-    display: flex;
-    flew-flow: row wrap;
-    flex: 1;
-    border: 5px solid black;
-    align-content: flex-start;
-    overflow-y: scroll;
+    margin-bottom: 40px;
 }
 
 .card{
     display: flex;
     flex-flow: column nowrap;
     width: 300px;
-    mid-height: 150px;
     padding: 12px;
     background-color: var(--lightyellow);
     margin: 12px;
     border-radius: 12px;
-    border: 5px solid yellow;
 }
 
 .card > img{
     width: 100%;
-    height: auto;
     object-fit: contain;
     border-radius: 12px;
     margin-bottom: 8px;
-    border: 5px solid orange;
 }
 
 .card > span{
     text-align: left;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 footer{
@@ -172,7 +123,6 @@ footer{
     align-items: center;
     font-size: 12px;
     min-height: calc(8% - 12px);
-    border: 5px solid green;
 }
 
 
@@ -206,11 +156,5 @@ footer{
     main{
         font-size: 20px;
         line-height: 16px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
     }
 }
