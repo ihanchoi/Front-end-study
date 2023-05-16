@@ -60,7 +60,7 @@ Learn front-end concepts and work on hands-on projects.
 <br />
 
 ### Second Week
-- <a href="https://ihanchoi.github.io//Front-end-study/tree/main/2-2">Demo</a>
+- <a href="https://ihanchoi.github.io//Front-end-study/2-2">Demo</a>
 - Responsive Web Development
 
 <br />
@@ -71,7 +71,7 @@ Learn front-end concepts and work on hands-on projects.
 
 
 ### Fourth Week
-- <a href="https://ihanchoi.github.io//Front-end-study/tree/main/4-2">Demo</a>
+- <a href="https://ihanchoi.github.io//Front-end-study/4-2">Demo</a>
 - Add new feature: Modal window popup, add component
 
 
