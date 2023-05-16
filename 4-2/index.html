@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <Head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>HANI | Fav foods ✨</title>
+    <link rel="stylesheet" href="./style.css" />
+  </Head>
+
+  <body>
+    <header>
+      <h1>HANI's fav foods</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu</li>
+          <li>Food</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="sidebar" id="sidebar">
+        <button type="button" class="add-btn" id="addItem">Add menu</button>
+        <span>🎂Cake🎂</span>
+        <span>🍜Pho🍜</span>
+        <span>🦀Crab🦀</span>
+        <span>🍝Pasta🍝</span>
+        <span>🥞Pancake🥞</span>
+      </div>
+
+      <section class="container" id="container">
+        <div class="card">
+          <img src="./images/cake.jpg" alt="Cake" />
+          <span>berry berry strawberry</span>
+        </div>
+        <div class="card">
+          <img src="./images/pho.jpg" alt="Pho" />
+          <span>hohoho pho</span>
+        </div>
+        <div class="card">
+          <img src="./images/crabs.jpg" alt="Crab" />
+          <span>tasty crab</span>
+        </div>
+        <div class="card">
+          <img src="./images/pasta.JPG" alt="Pasta" />
+          <span>yummy yummy pasta</span>
+        </div>
+        <div class="card">
+          <img src="./images/souffle.jpg" alt="Pancake" />
+          <span>sweet sweet pancake</span>
+        </div>
+      </section>
+
+      <div class="modal-background" id="modal">
+        <form class="modal" id="addItemForm">
+          <span class="modal-close" id="modalClose"> ˣ </span>
+          <label for="menu" class="label">Menu</label>
+          <input
+            id="menu"
+            type="text"
+            placeholder="add menu"
+            class="input"
+            maxlength="20"
+            required
+          />
+          <label for="image" class="label">Image</label>
+          <input
+            id="image"
+            type="text"
+            placeholder="URL"
+            class="input"
+            required
+          />
+          <label for="content" class="label">Content</label>
+          <input
+            id="content"
+            type="text"
+            placeholder="content"
+            class="input"
+            required
+          />
+          <button type="save" class="save-btn">SAVE</button>
+        </form>
+      </div>
+      <script src="./modal.js"></script>
+      <script src="./addItem.js"></script>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        HANI All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
+​
