@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+}
+
+:root{
+  --lightblue: #cadefc; 
+  --lightpink: #ffcccc;
+  --lightgreen: #e0ffcd;
+  --lightgray: #F3F3F3;
+  --lightyellow: #fdffcd;
+}
+
+html, body{
+  height: 100%;
+  margin: 0; 
+  font-family: 'Raleway';
+  min-width: 320px;
+}
+
+header {
+  position: sticky;
+  top: -4px;
+  opacity: 0.8;
+  backdrop-filter: blur(30px);
+  background-color: white;
+  color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body{
+  padding: 20px; 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-flew: row nowrap;
+  margin-top: 30px; 
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.sidebar{
+  display: flex;
+  flex-flow: column nowrap;
+  transition: 0.6s;
+  text-align: justify;
+  background: var(--lightyellow);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.sidebar > span{
+  font-size: 1.0rem;
+  transition: 0.6s;
+  margin-bottom: 12px;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  font-size: 16px;
+  margin-left: 40px;
+  transition: 0.6s;
+  align-content: flex-start;
+  overflow-y: scroll;
+}
+
+.card{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 240px;
+  padding: 12px;
+  transition: 0.6s;
+  background-color: var(--lightyellow);
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.card > img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.card > span{
+  text-align: center;
+  word-break: break-all;
+}
+
+.add-btn{
+  padding: 7px 10px;
+  background: var(--lightgray);
+  color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s;
+
+}
+
+.add-btn:hover{
+  background: var(--lightyellow);
+  color: black;
+
+}
+
+.save-btn{
+  padding: 10px;
+  background: var(--lightblue);
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.save-btn:hover{
+  background: var(--lightpink);
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.label{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--lightgray)
+}
+
+.input:focus{
+  color: lightpink;
+}
+
+.modal-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9;
+}
+
+.modal{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  z-index: 10;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 20px;
+  font-weight: 200;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.modal-close: hover{
+  transform: scale(1.4);
+  transition: 0.6s;
+}
+
+
+footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 12px;
+  min-height: calc(8% - 12px);
+}
+
+
+@media (max-width: 1480px){
+  .card{
+      background: var(--lightblue);
+  }
+  .sidebar{
+      background: var(--lightblue);
+  }
+}
+
+
+@media (max-width: 968px){
+  .card{
+      background: var(--lightgreen);
+  }
+  .sidebar{
+      background: var(--lightgreen);
+  }
+}
+
+@media (max-width: 681px){
+  .card{
+      background: var(--lightyellow);
+  }
+  .sidebar{
+      background: var(--lightyellow);
+  }
+}
