@@ -5,23 +5,23 @@ function App() {
   const initData = [
     {
       name: "Soul",
-      content: "Quiet coyote~ 제리 좋아!",
-      url: "./images/soul.jpeg",
+      content: "Quiet coyote ~ 귀여운 영혼들과 제리 좋아!",
+      image: "https://alternativemovieposters.com/wp-content/uploads/2021/02/AndreyPankov_Soul.jpg",
     },
     {
       name: "Elemental",
       content: "내 인생의 주인공은 나야! 보면서 세 번 울었어요",
-      url: "./images/elemental.jpeg",
+      image: "https://pixarpost.com/wp-content/uploads/2023/06/Elemental-Fandango-Character-Poster.jpg",
     },
     {
       name: "My neighbor Totoro",
       content: "아마도 평생 좋아할 수 밖에 없는 토토로",
-      url: "./images/totoro.jpeg",
+      image: "https://cdn.shopify.com/s/files/1/1057/4964/products/My-Neighbor-Totoro-Vintage-Movie-Poster-Original-1-Sheet-27x41_300x@2x.jpg?v=1663224401",
     },
     {
       name: "Portrait of a Lady on Fire",
       content: "잔잔하고 고요하지만 강렬하게 타오르는 불꽃같은 순간들",
-      url: "./images/ladyonfire.jpeg",
+      image: "https://post-phinf.pstatic.net/MjAyMDAxMjdfNzAg/MDAxNTgwMTAzNzAwNTcy.pxW9WtFyOge9A5uEFXNiF8uHIgBDj749y2NBTdrHGmcg.zU5qkRGtRMim9tvaQWVmJRFTqtMDzyBbczh6yYY_AEAg.JPEG/movie_image.jpg?type=w800_q75",
     }
   ];
 
