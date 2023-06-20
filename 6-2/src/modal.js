@@ -30,7 +30,7 @@ return (
         <input
             id="image"
             type="text"
-            placeholder="URL"
+            placeholder="input url"
             className="input"
             required
             value={image}
@@ -40,13 +40,13 @@ return (
         <input
             id="content"
             type="text"
-            placeholder="K-장녀라면 느낄 수 있는 감동..."
+            placeholder="leave your comment"
             className="input"
             required
             value={content}
             onChange={(e) => setContent(e.target.value)}
         />
-        <button type="submit" className="submit-button"> SUBMIT </button>
+        <button type="submit" className="sub-btn"> SUBMIT </button>
         </form>
     </div>
     );

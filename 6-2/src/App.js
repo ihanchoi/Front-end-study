@@ -57,6 +57,15 @@ function App() {
           ))}
         </section>
       </main>
+      <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        HANI All Rights Reserved
+      </p>
+    </footer>
       <Modal
         addItem={addItem}
         modalOpen={modalOpen}

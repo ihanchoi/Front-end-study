@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+  font-family: 'Black Ops One', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 }
 
 :root{
@@ -14,35 +14,7 @@
 html, body{
   height: 100%;
   margin: 0; 
-  font-family: 'Raleway';
   min-width: 320px;
-}
-
-header {
-  position: sticky;
-  top: -4px;
-  opacity: 0.8;
-  backdrop-filter: blur(30px);
-  background-color: white;
-  color: black;
-  padding-left: 0px;
-  padding-right: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin-left: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 body{
@@ -51,6 +23,20 @@ body{
 
 *{
   box-sizing: border-box;
+  font-family: "Black Ops One";
+}
+
+.title {
+  top: 10px;
+  flex-flow: row nowrap;
+  backdrop-filter: blur(30px);
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black Ops One";
+  font-size: 40px;
 }
 
 main{
@@ -103,6 +89,7 @@ main{
 .card > img{
   width: 100%;
   object-fit: contain;
+  height: auto;
   border-radius: 12px;
   margin-bottom: 8px;
 }
@@ -132,7 +119,7 @@ main{
 
 }
 
-.save-btn{
+.sub-btn{
   padding: 10px;
   background: var(--lightblue);
   color: white;
@@ -144,7 +131,7 @@ main{
   margin-top: 20px;
 }
 
-.save-btn:hover{
+.sub-btn:hover{
   background: var(--lightpink);
   transform: scale(1.1);
   transition: 0.6s;
